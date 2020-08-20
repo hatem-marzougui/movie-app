@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'montserrat',sans-serif;
+  background-color: #223343;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{padding: 50px 15px 0px;}
+header h1{
+  color:white;
+ font-size: 48px;
+font-weight: 500;
+text-align: center;}
+
+main{
+  width:100%;
+  max-width: 960px;
+ margin:0 auto;
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+section{padding: 15px;}
+.searchbox{
+  display:block;
+  width:70%;
+  padding:15px;
+  border:none;
+  outline:none;
+  background: none;
+  background-color: rgb(236, 213, 209);
+  border-radius: 8px;
+  columns: #53565a;;
+  font-size: 20px;
+  font-weight: 300px;
+  transition: 0.4s ease-out;
+}
+
+.searchbox:focus{
+  box-shadow: 0px 0px 10px 5px #4484C4;
+}
+
+.result:hover{
+  box-shadow: 0px 0px 5px 5px #4484C4;
+}
+
+.results{
+  display:flex;
+  flex-wrap:wrap;
+  margin:0px -15px;
+}
+.results .result{
+  width:33.333%;
+  min-width: 250px;
+  padding:15px;
+  display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ cursor:pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.results .result img{
+  display:block;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+.results .result h3{
+  color:#FFF;
+  font-size: 20px;
+  font-weight:600;
+  padding: 10px;
+  background: #445565;
+  flex: 1 1 100%;
+  transition: 0.4s ease-out;
 }
+
+.results .result:hover h3{
+  background:rgb(244, 241, 247);
+  color:#223343;
+}
+
+
+
+.results .result i{color:yellow}
+
+
+
+  input{
+    width:400px;
+    height:50px;
+    margin:20px;
+    border: none;
+    outline:none;
+   background-color: rgb(131, 165, 96);
+   color: blue;
+   font-family:cursive;
+   font-size: x-large;
+   text-align: center;
+   
+  }
+
+  
+
+ .ReactModal__Content--after-open{
+   display:flex;flex-direction: column;
+  height:500px;
+width:500px;
+margin:auto}
+
+.button {
+  height:75px;
+  width:150px;
+  margin: auto;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: #df3105;;
+  border: none;
+  outline:none;}
+  .button:hover {background-color: red; }
+
+  label{font-size:25px;text-align: center;font-family: cursive;}
+
+  .searchbox-wrap{display:flex;flex-direction: row;}
+ span{padding-top:25px;}
+ .rating {
+   
+  color: yellow;
+  font-size: 30px;
+}
+.ratingsearch{
+  padding:22px;
+}
+
+.ratingcard{padding-left: 60px;}

@@ -8,7 +8,10 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-modal": "^3.11.2",
+    "react-scripts": "3.4.1",
+    "react-star-rating-component": "^1.4.1",
+    "simple-rating-stars": "^1.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
